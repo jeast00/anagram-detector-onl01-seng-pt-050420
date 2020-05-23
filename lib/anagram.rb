@@ -8,7 +8,7 @@ class Anagram
   end
 
   def match(anagrams)
-    anagrams.collect(&:shuffle).nil?
+    anagrams.split.collect(&:shuffle).nil?
   end
 
 end
