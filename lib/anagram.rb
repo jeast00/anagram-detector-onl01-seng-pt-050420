@@ -8,7 +8,9 @@ class Anagram
   end
 
   def match(anagrams)
-    @anagrams.split.match(anagrams).collect(&:shuffle).nil?
+    @anagrams.select do |word|
+      word.char.sort == @anagrams.char.sort
+    end
   end
 
 end
