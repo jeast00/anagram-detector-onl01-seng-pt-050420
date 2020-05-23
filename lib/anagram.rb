@@ -7,7 +7,7 @@ class Anagram
     @anagrams = anagrams
   end
 
-  def match
+  def match(anagrams)
 
   end
 
